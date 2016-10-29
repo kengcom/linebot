@@ -28,8 +28,13 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
+
 			
 			$post = json_encode($data);
+
+			$data2 = 'My name is keng'
+			$post = json_encode($data2);
+
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
